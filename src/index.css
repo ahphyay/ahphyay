@@ -1,7 +1,17 @@
 @import "tailwindcss";
+
 @tailwind utilities;
 
 body {
   @apply m-0 p-0 font-sans bg-gray-50;
 }
 
+
+*, body {
+  font-family: "Aptos", sans-serif;
+}
+
+h1, h2, h3, p {
+  font-family: "Aptos", sans-serif;
+  
+}
