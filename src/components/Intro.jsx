@@ -1,6 +1,6 @@
 // src/components/Intro.jsx
 import { FaLeaf, FaUsers, FaLightbulb } from "react-icons/fa";
-import IntroImage from "../assets/images/Intro.jpg";
+import IntroImage from "../assets/images/intro.jpg";
 
 export default function Intro() {
     return (
