@@ -1,6 +1,7 @@
 // src/components/Intro.jsx
 import { FaLeaf, FaUsers, FaLightbulb } from "react-icons/fa";
 import IntroImage from "../assets/images/intro.jpg";
+import { Link } from "react-router-dom";
 
 export default function Intro() {
     return (
@@ -9,11 +10,7 @@ export default function Intro() {
 
                 {/* Image */}
                 <div className="md:w-1/2">
-                    {/* <img
-            src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=800&q=80"
-            alt="Ahphyay"
-            className="rounded-xl shadow-lg w-full md:h-[500px] object-cover"
-          /> */}
+
                     <img
                         src={IntroImage} alt="Ahphyay"
                         className="rounded-xl shadow-lg w-full md:h-[500px] object-cover"
@@ -65,18 +62,19 @@ export default function Intro() {
 
                     {/* Buttons */}
                     <div className="mt-10 flex flex-col sm:flex-row gap-4 ">
-                        <a
-                            href="/shop"
+                        <Link
+                            to="/shop"
                             className="bg-[#653332] text-white px-6 py-3 rounded-full font-medium hover:bg-[#7f4540] transition"
                         >
                             Shop Now
-                        </a>
-                        <a
-                            href="/about"
+                        </Link>
+                         <Link
+                            to="/about-us"
                             className="bg-white border border-[#653332] text-[#653332] px-6 py-3 rounded-full font-medium hover:bg-[#fef5f5] transition"
                         >
                             Learn More
-                        </a>
+                        </Link>
+                       
                     </div>
 
                 </div>
